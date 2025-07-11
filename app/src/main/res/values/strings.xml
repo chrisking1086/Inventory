@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Inventory</string>
+    <string name="password">Password</string>
+    <string name="register">Register</string>
+    <string name="email">Email</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="username">Username</string>
+    <string name="item_name">Item Name</string>
+    <string name="item_description">Item Description</string>
+    <string name="quantity">Quantity</string>
+    <string name="add_item">Add Item</string>
+    <string name="close_button">CloseActivity\n</string>
+    <string name="edit_item">Edit Item</string>
+    <string name="verify_password">Verify Password</string>
+    <string name="inventory_list">Inventory List</string>
+    <string name="inventory_item_name">Item Name</string>
+    <string name="inventory_item_description">Item Description</string>
+    <string name="inventory_item_quantity">Item Quantity</string>
+    <string name="item_quantity">0</string>
+    <string name="qty">QTY</string>
+    <string name="delete_button">Delete Button</string>
+    <string name="inventory_app">Inventory App</string>
+    <string name="login">Login</string>
+    <string name="register_new_user">Register New User</string>
+    <string name="edit_account">Edit Account</string>
+    <string name="current_username">current user</string>
+    <string name="save_changes">Save Changes</string>
+</resources>
