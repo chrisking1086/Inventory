@@ -5,49 +5,52 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="20sp"
+    android:padding="32dp"
     tools:context=".RegistrationActivity">
 
     <TextView
         android:id="@+id/inventoryListTextView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="32dp"
         android:gravity="center"
         android:padding="16dp"
         android:text="@string/add_item"
         android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/addNewItemNameEditText"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toEndOf="@+id/addItemCloseButton"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/addNewItemNameEditText"
         android:layout_width="match_parent"
         android:layout_height="50dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
         android:layout_marginBottom="48dp"
         android:ems="10"
         android:hint="@string/item_name"
         android:inputType="text"
         app:layout_constraintBottom_toTopOf="@+id/addNewItemDescriptionEditText"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/inventoryListTextView"
-        app:layout_constraintVertical_bias="1.0"
         tools:ignore="MissingConstraints" />
 
     <EditText
         android:id="@+id/addNewItemDescriptionEditText"
         android:layout_width="match_parent"
         android:layout_height="158dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
         android:layout_marginBottom="40dp"
         android:ems="10"
         android:hint="@string/item_description"
         android:inputType="text"
         app:layout_constraintBottom_toTopOf="@+id/addNewItemQuantityEditText"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         tools:ignore="MissingConstraints" />
 
@@ -55,42 +58,35 @@
         android:id="@+id/addNewItemQuantityEditText"
         android:layout_width="match_parent"
         android:layout_height="50dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
         android:layout_marginBottom="52dp"
         android:ems="10"
         android:hint="@string/quantity"
         android:inputType="number"
         app:layout_constraintBottom_toTopOf="@+id/addItemButton"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         tools:ignore="MissingConstraints" />
 
     <Button
         android:id="@+id/addItemButton"
-        android:layout_width="0dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
         android:layout_marginBottom="144dp"
-        android:paddingStart="20dp"
-        android:paddingEnd="20dp"
         android:text="@string/add_item"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent" />
 
     <ImageButton
         android:id="@+id/addItemCloseButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="19dp"
-        android:layout_marginTop="24dp"
-        android:layout_marginEnd="336dp"
-        android:layout_marginBottom="656dp"
-        android:contentDescription="@string/close_button"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@android:drawable/ic_menu_close_clear_cancel" />
+        app:srcCompat="@android:drawable/ic_menu_close_clear_cancel"  />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
