@@ -3,6 +3,8 @@ This Android Application was developed for a fictional customer Mobile2App while
 
 ## Application Description
 The Inventory App is a simple application targeted at small businesses to allow for managing inventories. The application was written in Java and uses SQLite for the database. There is a login screen, user authentication, registrations, inventory display and inventory manipulation.
+
+
 ## Screenshots
 
 ### Login Screen
