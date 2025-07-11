@@ -5,8 +5,21 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="50sp"
+    android:padding="20sp"
     tools:context=".RegistrationActivity">
+
+    <TextView
+        android:id="@+id/inventoryListTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="16dp"
+        android:text="@string/add_item"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/addItemCloseButton"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/addNewItemNameEditText"
@@ -18,8 +31,10 @@
         android:inputType="text"
         app:layout_constraintBottom_toTopOf="@+id/addNewItemDescriptionEditText"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inventoryListTextView"
+        app:layout_constraintVertical_bias="1.0"
         tools:ignore="MissingConstraints" />
 
     <EditText
@@ -52,9 +67,11 @@
 
     <Button
         android:id="@+id/addItemButton"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="144dp"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
         android:text="@string/add_item"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

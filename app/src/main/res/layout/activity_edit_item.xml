@@ -5,7 +5,21 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:padding="20dp"
     tools:context=".RegistrationActivity">
+
+    <TextView
+        android:id="@+id/editItemTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="16dp"
+        android:text="@string/edit_item"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/editItemNameEditText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/editItemNameEditText"
@@ -23,10 +37,9 @@
 
     <EditText
         android:id="@+id/editItemDescriptionEditText"
-        android:layout_width="410dp"
+        android:layout_width="match_parent"
         android:layout_height="158dp"
-        android:layout_marginStart="1dp"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="64dp"
         android:ems="10"
         android:hint="@string/item_description"
         android:inputType="text"
@@ -55,10 +68,13 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="68dp"
+        android:layout_marginBottom="123dp"
         android:text="@string/edit_item"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editQuantityEditText"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="153dp" />
+        tools:ignore="MissingConstraints" />
 
     <ImageButton
         android:id="@+id/editItemCloseButton"

@@ -35,22 +35,23 @@
         android:layout_margin="16dp"
         android:layout_marginBottom="16dp"
         android:text="@string/add_item"
+        android:backgroundTint="@color/primary_color"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.681"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toEndOf="@+id/editAccountButton" />
 
     <Button
         android:id="@+id/editAccountButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
-        android:layout_marginEnd="8dp"
         android:layout_marginBottom="4dp"
         android:text="@string/edit_account"
+        android:backgroundTint="@color/primary_color"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/addItemButton" />
+        app:layout_constraintEnd_toStartOf="@+id/addItemButton"
+        app:layout_constraintStart_toStartOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

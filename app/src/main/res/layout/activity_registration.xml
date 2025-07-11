@@ -86,6 +86,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="72dp"
+        android:backgroundTint="@color/primary_color"
         android:text="@string/register"
         app:layout_constraintTop_toBottomOf="@+id/newPhoneEditText"
         tools:layout_editor_absoluteX="20dp" />
@@ -94,11 +95,12 @@
         android:id="@+id/registerTextView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="4dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
         android:gravity="center_horizontal"
         android:text="@string/register_new_user"
         android:textSize="36sp"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="94dp" />
+        app:layout_constraintTop_toBottomOf="@+id/editItemCloseButton" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
